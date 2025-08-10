@@ -331,7 +331,6 @@ output USER_ASSIGNED_IDENTITY_PRINCIPAL_ID string = apiUserAssignedIdentity.outp
 output USER_ASSIGNED_IDENTITY_NAME string = apiUserAssignedIdentity.outputs.name
 
 // App outputs
-output APPLICATIONINSIGHTS_CONNECTION_STRING string = monitoring.outputs.connectionString
 output AZURE_KEY_VAULT_ENDPOINT string = enableSQLScripts ? db.outputs.keyVaultUri : ''
 output AZURE_KEY_VAULT_NAME string = enableSQLScripts ? db.outputs.keyVaultName : ''
 output AZURE_LOCATION string = location
