@@ -50,7 +50,7 @@ if [ ! -x "$SCRIPT_DIR/sqlcmd" ]; then
         if [[ "$ARCH" == "aarch64" || "$ARCH" == "arm64" ]]; then
             URL="${SQLCMD_BASEURL}${SQLCMD_VERSION}/sqlcmd-linux-arm64.tar.bz2"
         else
-            URL="${SQLCMD_BASEURL}${SQLCMD_VERSION}/sqlcmd-linux-x64.tar.bz2"
+            URL="${SQLCMD_BASEURL}${SQLCMD_VERSION}/sqlcmd-linux-amd64.tar.bz2"
         fi
     elif [[ "$OS" == "windows_nt" || "$OS" == "msys" || "$OS" == "cygwin" ]]; then
         if [[ "$ARCH" == "x86_64" || "$ARCH" == "amd64" ]]; then
