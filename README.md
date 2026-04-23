@@ -250,6 +250,10 @@ Id: b1a7c1e2-1234-4f56-9abc-1234567890ab, Title: Example: Walk the dog, Url: htt
 
 This enables you to build reactive, event-driven workflows based on changes in your SQL data.
 
+## Troubleshooting
+
+See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for common deployment issues, including how to find a working Azure region when you encounter `ProvisioningDisabled` errors.
+
 ## Resources
 
 - [Azure Functions SQL Bindings & Triggers Documentation (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql?tabs=isolated-process%2Cextensionv4&pivots=programming-language-csharp)
