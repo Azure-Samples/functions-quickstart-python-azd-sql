@@ -10,13 +10,21 @@
 				"venv",
 				".venv"
 			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
 			"problemMatcher": []
 		},
 		{
 			"label": "install dependencies (functions)",
-			"type": "shell",
-			"command": "pip",
+			"type": "process",
+			"command": "${workspaceFolder}/${config:azureFunctions.pythonVenv}/bin/python",
+			"windows": {
+				"command": "${workspaceFolder}/${config:azureFunctions.pythonVenv}/Scripts/python.exe"
+			},
 			"args": [
+				"-m",
+				"pip",
 				"install",
 				"-r",
 				"requirements.txt"
@@ -33,6 +41,7 @@
 		},
 		{
 			"type": "func",
+			"label": "func: host start",
 			"command": "host start",
 			"options": {
 				"cwd": "${workspaceFolder}"
