@@ -95,6 +95,11 @@ This serverless architecture enables scalable, event-driven data ingestion and p
    func start
    ```
    Or use VS Code to run the project with the built-in Azure Functions extension by pressing F5.
+   Open the repository root in VS Code. The dependency task uses the interpreter
+   in the root `.venv`, and the Functions task activates that same environment.
+   If this workspace already has another interpreter selected, run **Python:
+   Select Interpreter** and select `.venv` before debugging; changing
+   `python.defaultInterpreterPath` does not override a saved selection.
 
 1. Test the function locally by sending a POST request to the HTTP endpoint:
    ```json
